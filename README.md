@@ -47,4 +47,4 @@ nvim
 :UpdateRemotePlugins
 ```
 
-You should be good to go now, happy hacking! :man_technologist:
+You should be good to go now, happy hacking! :woman_technologist:
