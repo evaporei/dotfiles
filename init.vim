@@ -202,3 +202,6 @@ let g:editorconfig = v:true
 " disable copilot by default
 " to enable: `:Copilot enable`
 let g:copilot_enabled = v:false
+
+" syntax highlighting for assembly
+autocmd BufRead,BufNewFile *.asm set filetype=nasm
