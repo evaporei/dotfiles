@@ -133,6 +133,8 @@ call plug#begin('~/.vim/plugins')
     \ }
   
   Plug 'wakatime/vim-wakatime'
+
+  Plug 'github/copilot.vim'
 call plug#end()
 
 
@@ -194,3 +196,9 @@ nmap ga <Plug>(EasyAlign)
 let g:LanguageClient_serverCommands = {
 \ 'rust': ['rust-analyzer'],
 \ }
+
+let g:editorconfig = v:true
+
+" disable copilot by default
+" to enable: `:Copilot enable`
+let g:copilot_enabled = v:false
