@@ -1,9 +1,6 @@
-
 # dotfiles
 
-Files of some software I use.
-
-The init.vim is almost a clone of https://github.com/grvcoelho/dotfiles
+Configuration files of some software I use.
 
 ## Making `neovim` work on arch
 
