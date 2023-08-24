@@ -42,4 +42,10 @@ nvim
 :UpdateRemotePlugins
 ```
 
+## fish
+
+Dependencies:
+
+- https://github.com/joshuarli/vape (`cargo install vape`)
+
 You should be good to go now, happy hacking! :woman_technologist:
