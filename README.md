@@ -48,4 +48,13 @@ Dependencies:
 
 - https://github.com/joshuarli/vape (`cargo install vape`)
 
+## i3
+
+Dependencies:
+
+- i3lockmore
+- xss-lock
+- feh
+- fcitx5 (japanese)
+
 You should be good to go now, happy hacking! :woman_technologist:
