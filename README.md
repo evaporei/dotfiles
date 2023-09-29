@@ -2,44 +2,43 @@
 
 Configuration files of some software I use.
 
-## Making `neovim` work on arch
+## Making `neovim` work
 
-**1. Install [vim-plug](https://github.com/junegunn/vim-plug);**
+1. Install [packer](https://github.com/wbthomason/packer.nvim);
 
-```shell
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```bash
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
 
-**2. Install `neovim` plugins;**
-```shell
-nvim
-:PlugInstall
+2. Install plugins;
+
+```bash
+nvim ~/.config/nvim/lua/stuff/packer.lua
+:so
+:PackerSync
 ```
 
-**3. Install `pip`;**
+Next time you open `nvim` it will install the lsps and treesitter.
 
-```shell
+I'm not sure you need the following steps [3]-[5].
+
+3. Install `pip`;
+
+```bash
 sudo pacman -Sy python-pip
 ```
 
-**4. Install `neovim` `pip` package;**
+4. Install `neovim` `pip` package;
 
-```shell
+```bash
 sudo pip install neovim
 ```
 
-**5. Install `pynvim` `pip` package;**
+5. Install `pynvim` `pip` package.
 
-```shell
+```bash
 sudo pip install pynvim
-```
-
-**6. Open `neovim` and update the remote plugins;**
-
-```shell
-nvim
-:UpdateRemotePlugins
 ```
 
 ## fish
