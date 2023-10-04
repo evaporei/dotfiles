@@ -2,6 +2,13 @@ local lsp = require("lsp-zero")
 
 lsp.preset("recommended")
 
+-- local cmp = require('cmp')
+-- cmp.setup({
+--     mapping = cmp.mapping.preset.insert({
+--         ['<C-y>'] = cmp.mapping.confirm({ select = true }),
+--     })
+-- })
+
 lsp.on_attach(function(client, bufnr)
   lsp.default_keymaps({buffer = bufnr})
 end)
