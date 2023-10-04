@@ -1,6 +1,6 @@
 function Paint()
     -- banana
-    vim.cmd [[colorscheme dracula]]
+    vim.cmd [[colorscheme codedark]]
 end
 
 Paint()

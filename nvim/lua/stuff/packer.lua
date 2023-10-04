@@ -11,8 +11,6 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
-    use 'crusoexia/vim-dracula'
-
     use({'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}})
 
     use {
@@ -56,4 +54,6 @@ return require('packer').startup(function(use)
 
     -- I like this one, but I'll try to live without it for a bit
     -- use 'cohama/lexima.vim'
+
+    use 'tomasiser/vim-code-dark'
 end)
