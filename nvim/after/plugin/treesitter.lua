@@ -5,12 +5,11 @@ require'nvim-treesitter.configs'.setup {
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
 
-  -- Automatically install missing parsers when entering buffer
-  -- Recommendation: set to false if you don't have `tree-sitter` CLI installed locally
+  -- Automatically install missing parsers when entering buffer Recommendation: set to false if you don't have `tree-sitter` CLI installed locally
   auto_install = true,
 
   highlight = {
-    enable = false,
+    enable = true,
 
     -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
     -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
@@ -25,7 +24,7 @@ require("rust-tools").setup({
     on_attach = function(client)
       -- fixes stupid syntax highlighting problem from treesitter
       -- https://www.reddit.com/r/neovim/comments/10bx4vi/rusttools_breaks_treesitter_highlighting/
-      client.server_capabilities.semanticTokensProvider = nil
+      -- client.server_capabilities.semanticTokensProvider = nil
     end,
   }
 })
