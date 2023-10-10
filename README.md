@@ -55,5 +55,6 @@ Dependencies:
 - xss-lock
 - feh
 - fcitx5 (japanese)
+- gnome-screenshot
 
 You should be good to go now, happy hacking! :woman_technologist:
