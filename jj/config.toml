@@ -1,0 +1,11 @@
+[user]
+name = "Eva Pace"
+email = "eba.pachi@gmail.com"
+
+[ui]
+editor = "nvim"
+default-command = ["log", "-r", "::@"]
+diff-editor = ":builtin"
+
+[revset-aliases]
+'immutable_heads()' = 'tags()'
