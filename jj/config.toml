@@ -4,8 +4,29 @@ email = "eba.pachi@gmail.com"
 
 [ui]
 editor = "nvim"
-default-command = ["log", "-r", "::@"]
+# # list is not supported yet (LET'S CONTRIBUTE!)
+# default-command = ["log"]
+# default-command = "foo"
+default-command = ["log", "-r", "::@", "-l", "5"]
+# default-command = ["foo", "-r", "::@"]
+# default-command = "log"
+# just to make the hints shut the fuck up
+# builtin diff editor rules btw
 diff-editor = ":builtin"
 
 [revset-aliases]
+# this makes main mutable muahahaha
 'immutable_heads()' = 'tags()'
+
+# [snapshot]
+# max-new-file-size = "4194304" # 4MiB (1024 * 1024 * 4)
+
+[aliases]
+d = ["describe"]
+r = ["rebase"]
+s = ["split"]
+foo = [ "log", "--reversed" ]
+bsm = ["branch", "set", "main", "-r"]
+bs = ["branch", "set"]
+hug = ["move", "--from", "@", "--to", "@-"]
+birth = ["init", "--git-repo=."]
