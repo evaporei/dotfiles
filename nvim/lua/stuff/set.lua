@@ -33,3 +33,5 @@ vim.api.nvim_create_autocmd({"BufRead", "BufNewFile"}, {
     pattern = "*.cr",
     command = "set filetype=ruby",
 })
+
+vim.api.nvim_exec('language ja_JP.utf8', true)
