@@ -66,6 +66,9 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) =
       ( (modm, xK_F1),
         spawn "~/.screenlayouts/monitor.sh"
       ),
+      ( (modm, xK_F2),
+        spawn "~/.screenlayouts/momonitor.sh"
+      ),
       ( (modm, xK_F3),
         spawn "~/.screenlayouts/builtin.sh"
       ),
