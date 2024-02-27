@@ -28,3 +28,8 @@ vim.opt.diffopt = vim.opt.diffopt + "vertical"
 
 -- we'll see, primeagen tip
 vim.opt.updatetime = 50
+
+vim.api.nvim_create_autocmd({"BufRead", "BufNewFile"}, {
+    pattern = "*.cr",
+    command = "set filetype=ruby",
+})
