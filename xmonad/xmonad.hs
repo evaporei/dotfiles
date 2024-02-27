@@ -9,7 +9,10 @@ import XMonad.Util.Run(spawnPipe)
 import qualified XMonad.StackSet as W
 
 myTerminal :: [Char]
-myTerminal = "kitty"
+myTerminal = "neko"
+-- myTerminal = "kitty"
+-- myTerminal = "ghostty"
+-- myTerminal = "alacritty"
 
 myBorderWidth :: Dimension
 -- thin
