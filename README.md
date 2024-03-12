@@ -57,4 +57,10 @@ Dependencies:
 - fcitx5 (japanese)
 - gnome-screenshot
 
+## 日本語 :jp:
+
+- uncomment `ja_JP.utf8` from `/etc/locale.gen`, then ofc run `locale-gen`
+- set locale: `sudo localectl set-locale LANG=ja_JP.utf8`
+- just undo terminal because it looks terrible: `LANG=en_US.UTF-8 kitty`
+
 You should be good to go now, happy hacking! :woman_technologist:
