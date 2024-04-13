@@ -1,0 +1,43 @@
+# good defaults coming from Kitty + MacOS
+theme = "Pro"
+
+# https://sw.kovidgoyal.net/kitty/conf/#the-color-table
+# https://l0go.github.io/ghostty-base16-converter/
+
+font-family = "monospace"
+font-size = 22
+font-thicken = true
+
+cursor-color = #cccccc
+cursor-text = #111111
+
+background = #000000
+foreground = #dddddd
+
+selection-foreground = #000000
+selection-background = #fffacd
+
+# black
+palette = 0=#000000
+palette = 8=#767676
+# red
+palette = 1=#cc0403
+palette = 9=#f2201f
+# green
+palette = 2=#19cb00
+palette = 10=#23fd00
+# yellow
+palette = 3=#cecb00
+palette = 11=#fffd00
+# blue
+palette = 4=#0d73cc
+palette = 12=#1a8fff
+# purple
+palette = 5=#cb1ed1
+palette = 13=#fd28ff
+# aqua
+palette = 6=#0dcdcd
+palette = 14=#14ffff
+# white
+palette = 7=#dddddd
+palette = 15=#ffffff
