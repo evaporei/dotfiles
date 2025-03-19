@@ -4,6 +4,8 @@ theme = "Pro"
 # https://sw.kovidgoyal.net/kitty/conf/#the-color-table
 # https://l0go.github.io/ghostty-base16-converter/
 
+auto-update = off
+
 font-family = "monospace"
 font-size = 22
 font-thicken = true
@@ -41,3 +43,12 @@ palette = 14=#14ffff
 # white
 palette = 7=#dddddd
 palette = 15=#ffffff
+keybind = shift+enter=text:\x1b\r
+
+shell-integration = fish
+
+copy-on-select = clipboard
+clipboard-read = allow 
+clipboard-write = allow 
+
+macos-option-as-alt = true
